@@ -12,8 +12,10 @@
 		<script src="./js/main.js" defer></script>
 		<script src="./js/mobile-menu.js" defer></script>
 	</head>
-	<body class="flex min-h-screen flex-col bg-[#FAFAFA] text-accent">
-		<div class="burger-menu fixed inset-0 z-50 flex hidden h-screen flex-col items-center justify-center overflow-y-auto bg-accent p-8">
+	<body class="text-accent flex min-h-screen flex-col bg-[#FAFAFA]">
+		<div
+			class="burger-menu bg-accent fixed inset-0 z-50 flex hidden h-screen flex-col items-center justify-center overflow-y-auto p-8"
+		>
 			<nav class="text-white">
 				<ul class="space-y-7 text-center text-3xl font-bold">
 					<li>
@@ -42,7 +44,7 @@
 			</div>
 		</div>
 
-		<header class="h-24 bg-accent text-white" id="top">
+		<header class="bg-accent fixed top-0 left-0 right-0 z-40 h-24 text-white" id="top">
 			<div class="container flex h-full items-center justify-between">
 				<a href="./index.html">
 					<img src="./img/logo.svg" alt="Логотип" />
@@ -51,24 +53,37 @@
 				<nav class="hidden h-full md:block">
 					<ul class="flex h-full items-center">
 						<li class="active-link h-full transition hover:bg-[#144690]">
-							<a href="./index.html" class="flex h-full items-center px-3 lg:px-5"> Главная </a>
+							<a href="./index.html" class="flex h-full items-center px-3 lg:px-5">
+								Главная
+							</a>
 						</li>
 						<li class="h-full transition hover:bg-[#144690]">
-							<a href="./products.html" class="flex h-full items-center px-3 lg:px-5"> Продукция </a>
+							<a href="./products.html" class="flex h-full items-center px-3 lg:px-5">
+								Продукция
+							</a>
 						</li>
 						<li class="h-full transition hover:bg-[#144690]">
-							<a href="./objects.html" class="flex h-full items-center px-3 lg:px-5"> Наши объекты </a>
+							<a href="./objects.html" class="flex h-full items-center px-3 lg:px-5">
+								Наши объекты
+							</a>
 						</li>
 						<li class="h-full transition hover:bg-[#144690]">
-							<a href="./contact.html" class="flex h-full items-center px-3 lg:px-5"> Контакты </a>
+							<a href="./contact.html" class="flex h-full items-center px-3 lg:px-5">
+								Контакты
+							</a>
 						</li>
 						<li class="h-full transition hover:bg-[#144690]">
-							<a href="./about.html" class="flex h-full items-center px-3 lg:px-5"> О нас </a>
+							<a href="./about.html" class="flex h-full items-center px-3 lg:px-5">
+								О нас
+							</a>
 						</li>
 					</ul>
 				</nav>
 
-				<a href="tel:+998946842318" class="hidden h-full px-3 transition hover:bg-[#144690] md:flex md:items-center lg:px-5">
+				<a
+					href="tel:+998946842318"
+					class="hidden h-full px-3 transition hover:bg-[#144690] md:flex md:items-center lg:px-5"
+				>
 					<img src="./img/icons/phone.svg" alt="Телефонный номер" class="lg:hidden" />
 					<span class="h-full items-center md:hidden lg:flex"> +998 94 684 23 18 </span>
 				</a>
@@ -79,119 +94,281 @@
 			</div>
 		</header>
 
+		<section>
+			<div class="hero overflow-hidden">
+				<div class="swiper-wrapper">
+					<!-- swiper -->
+					<div
+						class="swiper-slide bg-cover bg-no-repeat"
+						style="background-image: url(./img/hero/1.jpg)"
+					>
+						<div
+							class="container flex min-h-screen flex-col justify-center space-y-10 overflow-y-auto pt-24 pb-10 lg:pb-0"
+						>
+							<div
+								class="space-y-10 overflow-hidden text-[44px] font-black text-white md:text-7xl lg:text-8xl"
+							>
+								<h1>Бетон от М100 до М800</h1>
+								<h2>Какойто текст</h2>
+							</div>
+							<div class="text-center">
+								<a
+									href="#"
+									class="border-accent inline-block rounded-full border-2 bg-white px-10 py-3 text-lg font-bold"
+									>Оставить заявку</a
+								>
+							</div>
+						</div>
+					</div>
+					<!-- end of swiper -->
+					<!-- swiper -->
+					<div
+						class="swiper-slide bg-cover bg-no-repeat"
+						style="background-image: url(./img/hero/1.jpg)"
+					>
+						<div
+							class="container flex min-h-screen flex-col justify-center space-y-10 overflow-y-auto pt-24 pb-10 lg:pb-0"
+						>
+							<div
+								class="space-y-10 overflow-hidden text-[44px] font-black text-white md:text-7xl lg:text-8xl"
+							>
+								<h1>Бетон от М100 до М800</h1>
+								<h2>Какойто текст</h2>
+							</div>
+							<div class="text-center">
+								<a
+									href="#"
+									class="border-accent inline-block rounded-full border-2 bg-white px-10 py-3 text-lg font-bold"
+									>Оставить заявку</a
+								>
+							</div>
+						</div>
+					</div>
+					<!-- end of swiper -->
+					<!-- swiper -->
+					<div
+						class="swiper-slide bg-cover bg-no-repeat"
+						style="background-image: url(./img/hero/1.jpg)"
+					>
+						<div
+							class="container flex min-h-screen flex-col justify-center space-y-10 overflow-y-auto pt-24 pb-10 lg:pb-0"
+						>
+							<div
+								class="space-y-10 overflow-hidden text-[44px] font-black text-white md:text-7xl lg:text-8xl"
+							>
+								<h1>Бетон от М100 до М800</h1>
+								<h2>Какойто текст</h2>
+							</div>
+							<div class="text-center">
+								<a
+									href="#"
+									class="border-accent inline-block rounded-full border-2 bg-white px-10 py-3 text-lg font-bold"
+									>Оставить заявку</a
+								>
+							</div>
+						</div>
+					</div>
+					<!-- end of swiper -->
+				</div>
+				<div class="swiper-pagination hero-pagination-bullet"></div>
+			</div>
+		</section>
+
 		<main>
 			<section class="container space-y-12 py-10 md:py-20">
-				<h2 class="relative text-center text-2xl font-semibold sm:text-4xl">Продукции в продаже</h2>
+				<h2 class="relative text-center text-2xl font-semibold sm:text-4xl">
+					Продукции в продаже
+				</h2>
 				<div class="flex flex-wrap justify-between gap-y-7">
-					<div class="mx-auto flex h-[410px] w-full max-w-[400px] flex-col overflow-hidden rounded-b-xl bg-white shadow-sm sm:mx-0 sm:w-[265px]">
+					<div
+						class="mx-auto flex h-[410px] w-full max-w-[400px] flex-col overflow-hidden rounded-b-xl bg-white shadow-sm sm:mx-0 sm:w-[265px]"
+					>
 						<div class="min-h-[270px] w-full overflow-hidden rounded-xl sm:rounded-none">
 							<picture>
 								<source srcset="./img/products-on-sale/1.webp" type="image/webp" />
-								<img src="./img/products-on-sale/1.jpg" alt="Продукция" class="h-full w-full object-cover" />
+								<img
+									src="./img/products-on-sale/1.jpg"
+									alt="Продукция"
+									class="h-full w-full object-cover"
+								/>
 							</picture>
 						</div>
 						<div class="flex h-full flex-col p-5">
 							<h3 class="text-2xl">Название</h3>
 							<div class="mt-auto text-center">
-								<a href="./product.html" class="inline-block rounded-full border-2 border-accent px-10 py-3 text-lg font-bold"> Подробнее </a>
+								<a
+									href="./product.html"
+									class="border-accent inline-block rounded-full border-2 px-10 py-3 text-lg font-bold"
+								>
+									Подробнее
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="mx-auto flex h-[410px] w-full max-w-[400px] flex-col overflow-hidden rounded-b-xl bg-white shadow-sm sm:mx-0 sm:w-[265px]">
+					<div
+						class="mx-auto flex h-[410px] w-full max-w-[400px] flex-col overflow-hidden rounded-b-xl bg-white shadow-sm sm:mx-0 sm:w-[265px]"
+					>
 						<div class="min-h-[270px] w-full overflow-hidden rounded-xl sm:rounded-none">
 							<picture>
 								<source srcset="./img/products-on-sale/2.webp" type="image/webp" />
-								<img src="./img/products-on-sale/2.jpg" alt="Продукция" class="h-full w-full object-cover" />
+								<img
+									src="./img/products-on-sale/2.jpg"
+									alt="Продукция"
+									class="h-full w-full object-cover"
+								/>
 							</picture>
 						</div>
 						<div class="flex h-full flex-col p-5">
 							<h3 class="text-2xl">Название</h3>
 							<div class="mt-auto text-center">
-								<a href="./product.html" class="inline-block rounded-full border-2 border-accent px-10 py-3 text-lg font-bold"> Подробнее </a>
+								<a
+									href="./product.html"
+									class="border-accent inline-block rounded-full border-2 px-10 py-3 text-lg font-bold"
+								>
+									Подробнее
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="mx-auto flex h-[410px] w-full max-w-[400px] flex-col overflow-hidden rounded-b-xl bg-white shadow-sm sm:mx-0 sm:w-[265px]">
+					<div
+						class="mx-auto flex h-[410px] w-full max-w-[400px] flex-col overflow-hidden rounded-b-xl bg-white shadow-sm sm:mx-0 sm:w-[265px]"
+					>
 						<div class="min-h-[270px] w-full overflow-hidden rounded-xl sm:rounded-none">
 							<picture>
 								<source srcset="./img/products-on-sale/3.webp" type="image/webp" />
-								<img src="./img/products-on-sale/3.jpg" alt="Продукция" class="h-full w-full object-cover" />
+								<img
+									src="./img/products-on-sale/3.jpg"
+									alt="Продукция"
+									class="h-full w-full object-cover"
+								/>
 							</picture>
 						</div>
 						<div class="flex h-full flex-col p-5">
 							<h3 class="text-2xl">Название</h3>
 							<div class="mt-auto text-center">
-								<a href="./product.html" class="inline-block rounded-full border-2 border-accent px-10 py-3 text-lg font-bold"> Подробнее </a>
+								<a
+									href="./product.html"
+									class="border-accent inline-block rounded-full border-2 px-10 py-3 text-lg font-bold"
+								>
+									Подробнее
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="mx-auto flex h-[410px] w-full max-w-[400px] flex-col overflow-hidden rounded-b-xl bg-white shadow-sm sm:mx-0 sm:w-[265px]">
+					<div
+						class="mx-auto flex h-[410px] w-full max-w-[400px] flex-col overflow-hidden rounded-b-xl bg-white shadow-sm sm:mx-0 sm:w-[265px]"
+					>
 						<div class="min-h-[270px] w-full overflow-hidden rounded-xl sm:rounded-none">
 							<picture>
 								<source srcset="./img/products-on-sale/4.webp" type="image/webp" />
-								<img src="./img/products-on-sale/4.jpg" alt="Продукция" class="h-full w-full object-cover" />
+								<img
+									src="./img/products-on-sale/4.jpg"
+									alt="Продукция"
+									class="h-full w-full object-cover"
+								/>
 							</picture>
 						</div>
 						<div class="flex h-full flex-col p-5">
 							<h3 class="text-2xl">Название</h3>
 							<div class="mt-auto text-center">
-								<a href="./product.html" class="inline-block rounded-full border-2 border-accent px-10 py-3 text-lg font-bold"> Подробнее </a>
+								<a
+									href="./product.html"
+									class="border-accent inline-block rounded-full border-2 px-10 py-3 text-lg font-bold"
+								>
+									Подробнее
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="flex items-center justify-center">
-					<a href="./products.html" class="inline-block rounded-full border-2 border-accent px-10 py-3 text-lg font-bold"> Весь ассортимент </a>
+					<a
+						href="./products.html"
+						class="border-accent inline-block rounded-full border-2 px-10 py-3 text-lg font-bold"
+					>
+						Весь ассортимент
+					</a>
 				</div>
 			</section>
 
 			<section class="container space-y-8 py-10 md:py-20 lg:space-y-28">
-				<h2 class="relative text-center text-2xl font-semibold sm:text-4xl">Бетон от М100 до М800</h2>
+				<h2 class="relative text-center text-2xl font-semibold sm:text-4xl">
+					Бетон от М100 до М800
+				</h2>
 				<div class="space-y-10 xl:flex xl:gap-x-8">
-					<ul class="flex snap-x snap-mandatory overflow-x-auto md:snap-none lg:justify-center xl:justify-start xl:space-x-5">
+					<ul
+						class="flex snap-x snap-mandatory overflow-x-auto md:snap-none lg:justify-center xl:justify-start xl:space-x-5"
+					>
 						<li
 							class="beton-card relative flex h-[500px] min-w-[256px] snap-center items-center justify-center overflow-hidden bg-black p-5 text-white lg:w-full xl:w-64"
 						>
-							<img src="./img/beton/1.jpg" alt="Бетон" class="absolute top-0 bottom-0 left-0 right-0 h-full w-full object-cover" />
+							<img
+								src="./img/beton/1.jpg"
+								alt="Бетон"
+								class="absolute top-0 bottom-0 left-0 right-0 h-full w-full object-cover"
+							/>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor tortor eros, condimentum venenatis feugiat velit aenean. Amet ornare
-								nibh sit at congue elementum convallis. Porttitor elit sed tincidunt consequat dui. Diam mauris orci ac sagittis id vulputate aliquam.
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor tortor
+								eros, condimentum venenatis feugiat velit aenean. Amet ornare nibh sit at
+								congue elementum convallis. Porttitor elit sed tincidunt consequat dui.
+								Diam mauris orci ac sagittis id vulputate aliquam.
 							</p>
 						</li>
 						<li
 							class="beton-card relative flex h-[500px] min-w-[256px] snap-center items-center justify-center overflow-hidden bg-black p-5 text-white lg:w-full xl:w-64"
 						>
-							<img src="./img/beton/2.jpg" alt="Бетон" class="absolute top-0 bottom-0 left-0 right-0 h-full w-full object-cover" />
+							<img
+								src="./img/beton/2.jpg"
+								alt="Бетон"
+								class="absolute top-0 bottom-0 left-0 right-0 h-full w-full object-cover"
+							/>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor tortor eros, condimentum venenatis feugiat velit aenean. Amet ornare
-								nibh sit at congue elementum convallis. Porttitor elit sed tincidunt consequat dui. Diam mauris orci ac sagittis id vulputate aliquam.
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor tortor
+								eros, condimentum venenatis feugiat velit aenean. Amet ornare nibh sit at
+								congue elementum convallis. Porttitor elit sed tincidunt consequat dui.
+								Diam mauris orci ac sagittis id vulputate aliquam.
 							</p>
 						</li>
 						<li
 							class="beton-card relative flex h-[500px] min-w-[256px] snap-center items-center justify-center overflow-hidden bg-black p-5 text-white lg:w-full xl:w-64"
 						>
-							<img src="./img/beton/3.jpg" alt="Бетон" class="absolute top-0 bottom-0 left-0 right-0 h-full w-full object-cover" />
+							<img
+								src="./img/beton/3.jpg"
+								alt="Бетон"
+								class="absolute top-0 bottom-0 left-0 right-0 h-full w-full object-cover"
+							/>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor tortor eros, condimentum venenatis feugiat velit aenean. Amet ornare
-								nibh sit at congue elementum convallis. Porttitor elit sed tincidunt consequat dui. Diam mauris orci ac sagittis id vulputate aliquam.
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor tortor
+								eros, condimentum venenatis feugiat velit aenean. Amet ornare nibh sit at
+								congue elementum convallis. Porttitor elit sed tincidunt consequat dui.
+								Diam mauris orci ac sagittis id vulputate aliquam.
 							</p>
 						</li>
 					</ul>
 					<div class="flex flex-col justify-center space-y-12 xl:flex-1">
 						<h3 class="text-2xl font-semibold md:text-4xl">Текст заголовок</h3>
 						<p class="text-lg">
-							Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Рукописи жаренные повстречался, свою великий
-							пустился обеспечивает ipsum рукопись запятых приставка рекламных, родного жизни. Гор свое за предложения языком на берегу!
+							Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+							тексты. Рукописи жаренные повстречался, свою великий пустился обеспечивает
+							ipsum рукопись запятых приставка рекламных, родного жизни. Гор свое за
+							предложения языком на берегу!
 						</p>
 						<div>
-							<a href="#" class="inline-block rounded-full border-2 border-accent px-10 py-3 text-lg font-bold"> Подробнее </a>
+							<a
+								href="#"
+								class="border-accent inline-block rounded-full border-2 px-10 py-3 text-lg font-bold"
+							>
+								Подробнее
+							</a>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<section class="container py-10 md:py-20">
-				<div class="items-center justify-between space-y-20 text-4xl md:flex md:space-y-0">
+				<div
+					class="items-center justify-between space-y-20 text-4xl md:flex md:space-y-0"
+				>
 					<div class="space-y-3 text-center">
 						<p class="font-black">3</p>
 						<h3 class="font-semibold">Завода</h3>
@@ -217,28 +394,60 @@
 					<div class="partners overflow-hidden">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide h-20 w-44">
-								<img src="./img/partners/1.svg" alt="Партнеры" class="h-full w-full object-scale-down" />
+								<img
+									src="./img/partners/1.svg"
+									alt="Партнеры"
+									class="h-full w-full object-scale-down"
+								/>
 							</div>
 							<div class="swiper-slide h-20 w-44">
-								<img src="./img/partners/1.svg" alt="Партнеры" class="h-full w-full object-scale-down" />
+								<img
+									src="./img/partners/1.svg"
+									alt="Партнеры"
+									class="h-full w-full object-scale-down"
+								/>
 							</div>
 							<div class="swiper-slide h-20 w-44">
-								<img src="./img/partners/1.svg" alt="Партнеры" class="h-full w-full object-scale-down" />
+								<img
+									src="./img/partners/1.svg"
+									alt="Партнеры"
+									class="h-full w-full object-scale-down"
+								/>
 							</div>
 							<div class="swiper-slide h-20 w-44">
-								<img src="./img/partners/1.svg" alt="Партнеры" class="h-full w-full object-scale-down" />
+								<img
+									src="./img/partners/1.svg"
+									alt="Партнеры"
+									class="h-full w-full object-scale-down"
+								/>
 							</div>
 							<div class="swiper-slide h-20 w-44">
-								<img src="./img/partners/1.svg" alt="Партнеры" class="h-full w-full object-scale-down" />
+								<img
+									src="./img/partners/1.svg"
+									alt="Партнеры"
+									class="h-full w-full object-scale-down"
+								/>
 							</div>
 							<div class="swiper-slide h-20 w-44">
-								<img src="./img/partners/1.svg" alt="Партнеры" class="h-full w-full object-scale-down" />
+								<img
+									src="./img/partners/1.svg"
+									alt="Партнеры"
+									class="h-full w-full object-scale-down"
+								/>
 							</div>
 							<div class="swiper-slide h-20 w-44">
-								<img src="./img/partners/1.svg" alt="Партнеры" class="h-full w-full object-scale-down" />
+								<img
+									src="./img/partners/1.svg"
+									alt="Партнеры"
+									class="h-full w-full object-scale-down"
+								/>
 							</div>
 							<div class="swiper-slide h-20 w-44">
-								<img src="./img/partners/1.svg" alt="Партнеры" class="h-full w-full object-scale-down" />
+								<img
+									src="./img/partners/1.svg"
+									alt="Партнеры"
+									class="h-full w-full object-scale-down"
+								/>
 							</div>
 						</div>
 					</div>
@@ -246,7 +455,9 @@
 			</section>
 
 			<section class="container space-y-8 py-10 sm:space-y-16 md:py-20">
-				<h2 class="relative text-center text-2xl font-semibold sm:text-4xl">Новости и событию</h2>
+				<h2 class="relative text-center text-2xl font-semibold sm:text-4xl">
+					Новости и событию
+				</h2>
 				<div class="swiper news-swiper relative">
 					<div class="swiper-wrapper pb-14">
 						<div class="swiper-slide pt-44 sm:pt-0">
@@ -255,15 +466,21 @@
 							>
 								<h3 class="text-2xl font-semibold">Текст заголовок</h3>
 								<p class="mt-7 w-full sm:max-w-xs">
-									Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Текста своих сих последний, мир скатился,
-									большой сбить диких грустный, силуэт ведущими эта моей которое всемогущая живет но что приставка?
+									Далеко-далеко за словесными горами, в стране гласных и согласных живут
+									рыбные тексты. Текста своих сих последний, мир скатился, большой сбить
+									диких грустный, силуэт ведущими эта моей которое всемогущая живет но что
+									приставка?
 								</p>
 								<div
 									class="absolute -top-44 right-1/2 h-48 w-48 translate-x-1/2 overflow-hidden rounded-xl sm:top-auto sm:-right-1/4 sm:translate-x-0"
 								>
 									<picture>
 										<source srcset="./img/news/1.webp" type="image/webp" />
-										<img src="./img/news/1.jpg" alt="Новость" class="h-full w-full object-cover" />
+										<img
+											src="./img/news/1.jpg"
+											alt="Новость"
+											class="h-full w-full object-cover"
+										/>
 									</picture>
 								</div>
 								<div class="mt-7 sm:mt-auto">
@@ -277,15 +494,21 @@
 							>
 								<h3 class="text-2xl font-semibold">Текст заголовок</h3>
 								<p class="mt-7 w-full sm:max-w-xs">
-									Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Текста своих сих последний, мир скатился,
-									большой сбить диких грустный, силуэт ведущими эта моей которое всемогущая живет но что приставка?
+									Далеко-далеко за словесными горами, в стране гласных и согласных живут
+									рыбные тексты. Текста своих сих последний, мир скатился, большой сбить
+									диких грустный, силуэт ведущими эта моей которое всемогущая живет но что
+									приставка?
 								</p>
 								<div
 									class="absolute -top-44 right-1/2 h-48 w-48 translate-x-1/2 overflow-hidden rounded-xl sm:top-auto sm:-right-1/4 sm:translate-x-0"
 								>
 									<picture>
 										<source srcset="./img/news/2.webp" type="image/webp" />
-										<img src="./img/news/2.jpg" alt="Новость" class="h-full w-full object-cover" />
+										<img
+											src="./img/news/2.jpg"
+											alt="Новость"
+											class="h-full w-full object-cover"
+										/>
 									</picture>
 								</div>
 								<div class="mt-7 sm:mt-auto">
@@ -299,15 +522,21 @@
 							>
 								<h3 class="text-2xl font-semibold">Текст заголовок</h3>
 								<p class="mt-7 w-full sm:max-w-xs">
-									Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Текста своих сих последний, мир скатился,
-									большой сбить диких грустный, силуэт ведущими эта моей которое всемогущая живет но что приставка?
+									Далеко-далеко за словесными горами, в стране гласных и согласных живут
+									рыбные тексты. Текста своих сих последний, мир скатился, большой сбить
+									диких грустный, силуэт ведущими эта моей которое всемогущая живет но что
+									приставка?
 								</p>
 								<div
 									class="absolute -top-44 right-1/2 h-48 w-48 translate-x-1/2 overflow-hidden rounded-xl sm:top-auto sm:-right-1/4 sm:translate-x-0"
 								>
 									<picture>
 										<source srcset="./img/news/1.webp" type="image/webp" />
-										<img src="./img/news/1.jpg" alt="Новость" class="h-full w-full object-cover" />
+										<img
+											src="./img/news/1.jpg"
+											alt="Новость"
+											class="h-full w-full object-cover"
+										/>
 									</picture>
 								</div>
 								<div class="mt-7 sm:mt-auto">
@@ -321,16 +550,21 @@
 							>
 								<h3 class="text-2xl font-semibold">Текст заголовок</h3>
 								<p class="mt-7 w-full sm:max-w-xs">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor tortor eros, condimentum venenatis feugiat velit aenean. Amet ornare
-									nibh sit at congue elementum convallis. Porttitor elit sed tincidunt consequat dui. Diam mauris orci ac sagittis id vulputate
-									aliquam.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor tortor
+									eros, condimentum venenatis feugiat velit aenean. Amet ornare nibh sit
+									at congue elementum convallis. Porttitor elit sed tincidunt consequat
+									dui. Diam mauris orci ac sagittis id vulputate aliquam.
 								</p>
 								<div
 									class="absolute -top-44 right-1/2 h-48 w-48 translate-x-1/2 overflow-hidden rounded-xl sm:top-auto sm:-right-1/4 sm:translate-x-0"
 								>
 									<picture>
 										<source srcset="./img/news/2.webp" type="image/webp" />
-										<img src="./img/news/2.jpg" alt="Новость" class="h-full w-full object-cover" />
+										<img
+											src="./img/news/2.jpg"
+											alt="Новость"
+											class="h-full w-full object-cover"
+										/>
 									</picture>
 								</div>
 								<div class="mt-7 sm:mt-auto">
@@ -344,16 +578,21 @@
 							>
 								<h3 class="text-2xl font-semibold">Текст заголовок</h3>
 								<p class="mt-7 w-full sm:max-w-xs">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor tortor eros, condimentum venenatis feugiat velit aenean. Amet ornare
-									nibh sit at congue elementum convallis. Porttitor elit sed tincidunt consequat dui. Diam mauris orci ac sagittis id vulputate
-									aliquam.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor tortor
+									eros, condimentum venenatis feugiat velit aenean. Amet ornare nibh sit
+									at congue elementum convallis. Porttitor elit sed tincidunt consequat
+									dui. Diam mauris orci ac sagittis id vulputate aliquam.
 								</p>
 								<div
 									class="absolute -top-44 right-1/2 h-48 w-48 translate-x-1/2 overflow-hidden rounded-xl sm:top-auto sm:-right-1/4 sm:translate-x-0"
 								>
 									<picture>
 										<source srcset="./img/news/1.webp" type="image/webp" />
-										<img src="./img/news/1.jpg" alt="Новость" class="h-full w-full object-cover" />
+										<img
+											src="./img/news/1.jpg"
+											alt="Новость"
+											class="h-full w-full object-cover"
+										/>
 									</picture>
 								</div>
 								<div class="mt-7 sm:mt-auto">
@@ -381,7 +620,9 @@
 			</section>
 
 			<section class="container space-y-8 py-10 sm:space-y-16 md:py-20">
-				<h2 class="relative text-center text-2xl font-semibold sm:text-4xl">В каких регионах мы работаем</h2>
+				<h2 class="relative text-center text-2xl font-semibold sm:text-4xl">
+					В каких регионах мы работаем
+				</h2>
 				<div class="flex flex-col gap-x-20 space-y-7 xl:flex-row xl:space-y-0">
 					<div class="mx-auto">
 						<img src="./img/map.svg" alt="Карта" />
@@ -389,8 +630,10 @@
 
 					<div class="space-y-7 lg:flex-1">
 						<p>
-							Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Безорфографичный залетают, вскоре он сбить точках
-							собрал там, проектах оксмокс правилами переписали запятых мир переулка текстами! Продолжил свою знаках снова!
+							Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+							тексты. Безорфографичный залетают, вскоре он сбить точках собрал там,
+							проектах оксмокс правилами переписали запятых мир переулка текстами!
+							Продолжил свою знаках снова!
 						</p>
 						<h3 class="text-2xl font-bold">Стать партнером</h3>
 						<form class="w-full space-y-4">
@@ -398,29 +641,36 @@
 								type="text"
 								placeholder="Ваше имя"
 								name="name"
-								class="w-full rounded-xl py-6 px-5 shadow-sm outline-none ring-accent transition-all placeholder:text-accent placeholder:opacity-50 focus:placeholder:opacity-100"
+								class="ring-accent placeholder:text-accent w-full rounded-xl py-6 px-5 shadow-sm outline-none transition-all placeholder:opacity-50 focus:placeholder:opacity-100"
 							/>
 							<input
 								type="tel"
 								placeholder="Ваш телефон"
 								name="phone"
-								class="w-full rounded-xl py-6 px-5 shadow-sm outline-none transition-all placeholder:text-accent placeholder:opacity-50 focus:placeholder:opacity-100"
+								class="placeholder:text-accent w-full rounded-xl py-6 px-5 shadow-sm outline-none transition-all placeholder:opacity-50 focus:placeholder:opacity-100"
 							/>
 							<input
 								type="text"
 								placeholder="Сайт компании (необязательно)"
 								name="site"
-								class="w-full rounded-xl py-6 px-5 shadow-sm outline-none transition-all placeholder:text-accent placeholder:opacity-50 focus:placeholder:opacity-100"
+								class="placeholder:text-accent w-full rounded-xl py-6 px-5 shadow-sm outline-none transition-all placeholder:opacity-50 focus:placeholder:opacity-100"
 							/>
-							<button type="submit" class="mx-auto block rounded-full border-2 border-accent px-10 py-3 text-lg font-bold">Отправить</button>
+							<button
+								type="submit"
+								class="border-accent mx-auto block rounded-full border-2 px-10 py-3 text-lg font-bold"
+							>
+								Отправить
+							</button>
 						</form>
 					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="mt-auto bg-accent pt-10 pb-16 text-white">
-			<div class="container space-y-10 sm:grid sm:grid-cols-2 sm:gap-10 sm:space-y-0 md:grid-cols-3 md:gap-y-5 lg:flex lg:justify-between">
+		<footer class="bg-accent mt-auto pt-10 pb-16 text-white">
+			<div
+				class="container space-y-10 sm:grid sm:grid-cols-2 sm:gap-10 sm:space-y-0 md:grid-cols-3 md:gap-y-5 lg:flex lg:justify-between"
+			>
 				<a href="#top">
 					<img src="./img/logo.svg" alt="Логотип" class="mx-auto w-64 sm:mx-0" />
 				</a>
@@ -441,19 +691,30 @@
 						<li>г. Ташкент, Янгихает, Бинокор КФЙ</li>
 					</ul>
 				</div>
-				<div class="space-y-3 sm:col-start-2 sm:row-start-1 sm:text-right md:row-start-auto md:text-center lg:text-left">
+				<div
+					class="space-y-3 sm:col-start-2 sm:row-start-1 sm:text-right md:row-start-auto md:text-center lg:text-left"
+				>
 					<h2 class="text-lg font-semibold">Контакты</h2>
 					<div>
 						<a href="tel:+998946842318" class="text-lg">+998 94 684 23 18</a>
 					</div>
 					<div class="flex space-x-8 sm:justify-end md:justify-center lg:justify-start">
-						<a href="#" class="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-accent-100">
+						<a
+							href="#"
+							class="bg-accent-100 flex h-8 w-8 items-center justify-center overflow-hidden rounded-full"
+						>
 							<img src="./img/icons/facebook.svg" alt="Facebook" />
 						</a>
-						<a href="#" class="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-accent-100">
+						<a
+							href="#"
+							class="bg-accent-100 flex h-8 w-8 items-center justify-center overflow-hidden rounded-full"
+						>
 							<img src="./img/icons/instagram.svg" alt="Instagram" />
 						</a>
-						<a href="#" class="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-accent-100">
+						<a
+							href="#"
+							class="bg-accent-100 flex h-8 w-8 items-center justify-center overflow-hidden rounded-full"
+						>
 							<img src="./img/icons/twitter.svg" alt="Twitter" />
 						</a>
 					</div>
