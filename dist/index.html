@@ -11,6 +11,7 @@
 	<title>Central Beton - Главная</title>
 	<script src="./js/swiper-bundle.min.js" defer></script>
 	<script src="./js/main.js" defer></script>
+	<script src="./js/lang.js" defer></script>
 	<script src="./js/mobile-menu.js" defer></script>
 	<script src="./js/modal-window.js" defer></script>
 </head>
@@ -70,6 +71,11 @@
 				<li>
 					<a href="tel:+998946842318"> +998 94 684 23 18 </a>
 				</li>
+				<ul class="flex justify-between">
+					<li><a href="#" class="active-lang">Ru</a></li>
+					<li><a href="#">Uz</a></li>
+					<li><a href="#">En</a></li>
+				</ul>
 			</ul>
 		</nav>
 
@@ -119,6 +125,25 @@
 				<img src="./img/icons/phone.svg" alt="Телефонный номер" class="lg:hidden" />
 				<span class="h-full items-center md:hidden lg:flex"> +998 94 684 23 18 </span>
 			</a>
+
+			<div class="hidden md:block">
+				<ul>
+					<li class="relative">
+
+						<a href="#" class="flex items-center space-x-2 lang-link">
+							<span>Ru</span>
+							<img src="./img/chevron.svg" alt="Chevron">
+						</a>
+
+						<ul
+							class="absolute z-50 border-2 bg-white border-accent text-accent rounded-md left-1/2 -translate-x-1/2 top-9 overflow-hidden lang-menu hidden">
+							<li><a href="#" class="px-5 py-1 inline-block hover:bg-slate-200">Uz</a></li>
+							<li><a href="#" class="px-5 py-1 inline-block hover:bg-slate-200">En</a></li>
+						</ul>
+
+					</li>
+				</ul>
+			</div>
 
 			<div class="burger-btn md:hidden">
 				<img src="./img/burger-btn.svg" alt="Меню" />
